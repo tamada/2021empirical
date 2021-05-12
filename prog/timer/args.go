@@ -64,7 +64,7 @@ func helpMessage(prog string) string {
 %s means 'notify me, later!'
 OPTIONS
     -u, --unit <UNIT>     specifies the time unit. Default is min
-                          Available units are: nsec, msec, sec, min, and hour.
+                          Available units are: nsec, usec, msec, sec, min, and hour.
     -H, --with-header     shows the header on notification.
     -h, --help            prints this message.
 NUMBER
@@ -115,7 +115,7 @@ func applyArguments(opts *options, args []string, original []string) (*options, 
 }
 
 func validate(time *timer) error {
-	availableUnits := []string{"nsec", "msec", "sec", "min", "hour"}
+	availableUnits := []string{"nsec", "usec", "msec", "sec", "min", "hour"}
 	value := strings.TrimSpace(strings.ToLower(time.unit))
 	for _, available := range availableUnits {
 		if value == available {
