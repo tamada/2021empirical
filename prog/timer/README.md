@@ -1,4 +1,4 @@
-# randomizer
+# timer
 
 次の問題の回答プログラム．
 
@@ -16,8 +16,8 @@ Go ならわかるシステムプログラミングに掲載されている次�
 nml [OPTIONS] <NUMBER> [-- <COMMANDS...>]
 nml means 'notify me, later!'
 OPTIONS
-    -u, --unit <UNIT>     specifies the time unit. Default is min
-                          Available units are: msec, sec, min, and hour.
+    -u, --unit <UNIT>     specifies the time unit. Default is min.
+                          Available units are: nsec, msec, sec, min, and hour.
     -H, --with-header     shows the header on notification.
     -h, --help            prints this message.
 NUMBER
@@ -25,7 +25,7 @@ NUMBER
 COMMANDS
     specifies the commands execute after timer.
     If no commands are specified, nml notifies by printing message
-    "MESSAGE FROM ARRIVE!! (<NUMBER> <UNIT> left)" to STDOUT.
+    "MESSAGE FROM NML ARRIVE!! (<NUMBER> <UNIT> left)" to STDOUT.
 ```
 
 ## Compile

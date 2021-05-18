@@ -63,7 +63,7 @@ func helpMessage(prog string) string {
 	return fmt.Sprintf(`%s [OPTIONS] <NUMBER> [-- <COMMANDS...>]
 %s means 'notify me, later!'
 OPTIONS
-    -u, --unit <UNIT>     specifies the time unit. Default is min
+    -u, --unit <UNIT>     specifies the time unit. Default is min.
                           Available units are: nsec, usec, msec, sec, min, and hour.
     -H, --with-header     shows the header on notification.
     -h, --help            prints this message.
